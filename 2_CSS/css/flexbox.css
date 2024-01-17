@@ -1,0 +1,118 @@
+
+div{
+    border : 1px solid black;
+    box-sizing: border-box; 
+    /* content + padding + border 합으로 width/height 지정 */
+}
+
+.item{
+    width: 75px;
+    height: 75px;
+}
+
+.item1{background-color: red;}
+.item2{background-color: orangered;}
+.item3{background-color: orange;}
+.item4{background-color: yellow;}
+.item5{background-color: yellowgreen;}
+.item6{background-color: green;}
+.item7{background-color: lightblue;}
+.item8{background-color: blue;}
+.item9{background-color: violet;}
+
+.flex-container {
+    height: 700px;
+    
+    display: flex;
+    /* 
+    item(내부요소)을 감싸는 요소의 형식을 flex 변경
+    -> item에 자동으로 지정된 margin 요소가 모두 사라지고
+    content 영역만큼의 크기만 가지게됨
+    */
+
+    /* flex-direction (부모 전용 속성) */
+    /* 메인축의 방향과 시작 위치를 지정하는 속성 */
+
+    /* 행 방향 (가로, 기본값) */
+    /* flex-direction: row; */
+
+    /* 행 방향 (가로) + 순서 반대 */
+    /* flex-direction: row-reverse; */
+
+    /* 열 방향 (세로) */
+    /* flex-direction: column; */
+
+    /* 열 방향 (세로) + 순서 반대 */
+    /* flex-direction: column-reverse; */
+
+    /* flex-wrap (부모 전용 속성) */
+    /* 내부 item들을 포장하는 속성
+        item들이 강제로 한줄에 배치되게 할지,
+        한줄을 벗어나 여러 줄로 배치할 것인지 지정
+    */
+
+    /* item을 한줄로 배치 (기본값) */
+    /* flex-wrap: nowrap */
+
+    /* item을 여러줄로 배치 */
+    /* flex-wrap: wrap; */
+
+    /* item을 여러 줄로 배치(뒤에서 배치) */
+    /* flex-wrap: wrap-reverse; */
+
+    /* justify-content */
+    /* 메인축 방향으로 item의 정렬 방법을 조정함 */
+
+    /* 메인축 방향으로 앞에서부터 정렬 (기본값) */
+    /* justify-content: flex-start; */
+
+    /* 메인축 방향으로 뒤에 붙어서 정렬 */
+    /* justify-content: flex-end; */
+
+    /* 메인축 방향으로 가운데 정렬 */
+    /* justify-content: center; */
+
+    /* 메인축 방향으로 일정 간격으로 사이를 띄움(좌우 끝 제외) */
+    /* justify-content: space-around; */
+
+    /* 메인축 방향으로 일정 간격으로 사이를 띄움(좌우 끝 포함) */
+    /* justify-content: space-evenly; */
+
+    /* 메인축 방향으로 좌우 끝 제외 일정 간격으로 사이를 띄움 */
+    /* justify-content: space-between; */
+
+    /* align-items */
+    /* item들을 교차축 방향으로 정렬하는 방법을 지정하는 속성 */
+
+    /* align-items: fist-start; */
+}
+
+#con {
+    display: flex;
+    width: 450px;
+    height: 450px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#center {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+
+.basis-20 { flex-basis: 20%;}
+.basis-30 { flex-basis: 30%;}
+.basis-50 { flex-basis: 50%;}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+}
+
+/* order: 숫자; 
+order : 0; 0이 기본값
+*/

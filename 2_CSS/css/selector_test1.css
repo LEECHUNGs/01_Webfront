@@ -10,6 +10,7 @@
     width: 60px;
     height: 60px;
     box-sizing: border-box;
+    background-color: white;
 }
 .box-1{
     background-color: red;
@@ -19,8 +20,8 @@
 }
 
 .container-1 > :nth-child(1){
-    top: 120px;
     position: absolute;
+    top: 120px;
 }
 
 .container-1 > :nth-child(2){
@@ -55,4 +56,28 @@
     position: absolute;
     top: 240px;
     left: 180px;
+}
+
+/* ***************** */
+
+.container-2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.container-2 tr:nth-child(5) td:first-child,
+.container-2 tr:last-child td:nth-child(2),
+.container-2 tr:nth-child(4) td:first-child,
+.container-2 tr:nth-child(3) td:first-child
+{
+    background-color: red;
+}
+
+.container-2 tr:nth-child(4) td:nth-child(2),
+.container-2 tr:nth-child(4) td:nth-child(3),
+.container-2 tr:last-child td:nth-child(3),
+.container-2 tr:last-child td:nth-child(4)
+{
+    background-color: green;
 }
