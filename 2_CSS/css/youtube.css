@@ -1,0 +1,230 @@
+* {
+    /* border: 1px solid yellowgreen; */
+    box-sizing: border-box;
+}
+
+header {
+    height: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+}
+
+/* nav */
+.nav-area > label {
+    flex-basis: 2%;
+    margin: 0.1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-area a {
+    height: 30px;
+    width: 100;
+    display: flex;
+}
+
+.nav-area img {
+    height: 30px;
+    width: 100%;
+}
+
+/* logo */
+.logo-area > a {
+    margin: 0.1%;
+    flex-basis: 8%;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-area > a > img {
+    height: 30px;
+    flex-basis: 20%;
+}
+
+.logo-area span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+
+/* 검색창 */
+.search-area {
+    margin: 0;
+    border: none;
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-area > form {
+    border: 1px solid black;
+    border-radius: 20px;
+    flex-basis: 50%;
+    display: flex;
+}
+
+.search-area > form > span:first-child{
+    background-color: rgba(255, 255, 255, 0);
+    flex-basis: 5%;
+}
+
+#query {
+    height:30px;
+    border: none;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+#keybordImg {
+    flex-basis: 10%;
+    height: 30px;
+    background-color: white;
+}
+
+.search-area > form > span:last-child {
+    flex-basis: 10%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-btn {
+    height: 30px;
+    border-radius: 20px;
+    flex-basis: 100%;
+    border: none;
+    background-color: #bbb;
+}
+
+/* 우측 기능 */
+
+.rigit-bar {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
+.rigit-bar > section:nth-child(1) {
+    flex-basis: 33.3%;
+    /* background-color: red; */
+}
+
+
+/* 메인 섹션 구분 */
+.main {
+    display: flex;
+}
+
+
+/* 영상/댓글 구역 */
+.left {
+    height: auto;
+    flex-basis: 68%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 영상 */
+.video {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.video > iframe {
+    width: 100%;
+    height: 750px;
+    border-radius: 15px;
+}
+
+
+
+/* 영상 설명 */
+.explan-area {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* title */
+.title {
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 구독 관련 */
+.suscribe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forward {
+    display: flex;
+    align-items: center;
+}
+
+.backward {
+    display: flex;
+    align-items: center;
+}
+
+/* 댓글 */
+/* 댓글 추가 */
+.line-add {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.user-icon > span{
+    text-align: center;
+    color: white;
+    line-height: 60px;
+}
+
+.line-add-text {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.line-add-text > input {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #bbb;
+}
+
+.line-add-text > section {
+    display: flex;
+    justify-content: right;
+}
+
+.line-add-text button {
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+}
+
+.line-add-text button:hover {
+    background-color: #bbb;
+}
+
+/* 댓글 1 */
