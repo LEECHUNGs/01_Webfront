@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 1050px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+header {
+    flex-basis: 20%;
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.logo span {
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* login */
+.login-area {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 로그인 데이터 입력 */
+.login-input {
+    display: flex;
+    border: 1px solid black;
+}
+
+/* id/pw 입력 */
+.id-pw-input {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+
+.id-pw-input > input {
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.id-pw-input > input:first-child {
+    border-bottom: 1px solid black;
+}
+
+/* 로그인 버튼 */
+.login-input > button {
+    flex-basis: 20%;
+    border: none;
+    border-left: 1px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    transition-duration: 0.1s;
+}
+
+.login-input > button:hover {
+    background-color: #bbb;
+}
+
+
+/* id/pw 찾기 */
+.login-set {
+    display: flex;
+    margin-top: 5px;
+}
+
+.login-set > a {
+    text-decoration: none;
+    color: black;
+}
+
+.login-set > span {
+    margin: 0 10px;
+}

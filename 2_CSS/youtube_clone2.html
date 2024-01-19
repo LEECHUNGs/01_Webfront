@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube_clone</title>
+    <link rel="stylesheet" href="css/youtube2.css">
+    <script src="https://kit.fontawesome.com/2bc76866e9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 메인 화면 -->
+    <main>
+
+        <!-- 네비게이션 바, 검색창 , 계정 관련 헤더 -->
+        <header>
+
+            <!-- 네비게이션 바 + 로고 구역 -->
+            <section class="nav-logo-area">
+                <!-- 네비게이션 바 구역 -->
+                <section class="nav-area">
+                    <button class="fa-solid fa-bars"></button>
+                </section>
+    
+                <!-- 로고 구역 -->
+                <section class="logo-area">
+                    <a href="https://www.youtube.com/"><img src="../images/youtube_logo.png" height="20px"></a>
+                </section>
+            </section>
+
+            <!-- 검색바 구역 -->
+            <section class="serach-area">
+
+                <form action="#">
+                    
+                    <!-- 검색바를 감싸는 박스 -->
+                    <section class="search-box">
+                        <!-- 검색 -->
+                        <input type="text" class="serach-input">
+    
+                        <!-- 키보드 버튼 -->
+                        <button class="fa-solid fa-keyboard" class="keyboard-btn"></button>
+    
+                        <!-- 검색 버튼 -->
+                        <button class="fa-solid fa-magnifying-glass" class="search-btn"></button>
+                    </section>
+
+                    <!-- 음성 검색 버튼 -->
+                    <button class="fa-solid fa-microphone" class="voice-btn"></button>
+
+                </form>
+
+            </section>
+
+            <section class="setting-login-area">
+                <!-- 설정 구역 -->
+                <section class="setting-area">
+                    <!-- 설정 버튼 -->
+                    <button class="fa-solid fa-ellipsis-vertical" class="setting-btn"></button>
+                </section>
+    
+                <!-- 로그인 구역 -->
+                <section class="login-area">
+                    <!-- 로그인 버튼 -->
+                    <button class="fa-regular fa-circle-user" class="login-btn"></button>
+                </section>
+            </section>
+
+        </header>
+    </main>
+
+    <!-- 영상, 정보, 댓글, 새 영상 영역 -->
+    <section class="main-area">
+        <!-- 영상, 정보, 댓글 영역 -->
+        <section class="left-area">
+
+            <!-- 영상 영역 -->
+            <section class="video-area">
+                <iframe src="https://www.youtube.com/embed/uiz7EsMPsuw" title="NewJeans (뉴진스) - GODS | 마스터카드와 함께하는 2023 월드 챔피언십 결승 개막식" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+
+            <!-- 영상 제목 영역 -->
+            <section class="title-area">
+                <span>
+                    NewJeans (뉴진스) - GODS | 마스터카드와 함께하는 2023 월드 챔피언십 결승 개막식
+                </span>
+            </section>
+
+            <!-- 영상 구독, 좋아요 영역 -->
+            <section class="public-area">
+
+                <!-- 채널, 구독버튼 영역 -->
+                <section class="public-left-area">
+                    <!-- 채널명 버튼 -->
+                    <a href="#" class="channal-btn">
+                        <img src="../images/채널명.png">
+                    </a>
+    
+                    <!-- 구독 버튼 -->
+                    <button class="public-btn">구독</button>
+    
+                </section>
+
+                <!-- 좋아요, 공유, 더보기 버튼 -->
+                <section class="public-right-area">
+
+                    <!-- 좋아요, 싫어요 버튼 영역 -->
+                    <section class="thumbs-area">
+
+                        <!-- 좋아요 버튼 -->
+                        <button class="fa-regular fa-thumbs-up"> 23만</button>
+                        
+                        <span>|</span>
+
+                        <!-- 싫어요 버튼 -->
+                        <button class="fa-regular fa-thumbs-down"></button>
+
+                    </section>
+
+                    <!-- 공유 버튼 영역 -->
+                    <section class="share-area">
+                        <button class="fa-solid fa-share-from-square">공유</button>
+                    </section>
+                    
+                    <!-- 더보기 버튼 -->
+                    <section class="add-area">
+                        <button class="fa-solid fa-ellipsis"></button>
+                    </section>
+
+                </section>
+
+
+            </section>
+
+            <!-- 영상 설명 영역 -->
+            <section class="explan-area"></section>
+
+            <!-- 댓글 작성 영역 -->
+            <section class="commentAdd-area"></section>
+
+            <!-- 댓글 리스트 영역 -->
+            <section class="comment-area"></section>
+
+        </section>
+
+        <!-- 추천 영상 영역 -->
+        <section class="right-area">
+
+        </section>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

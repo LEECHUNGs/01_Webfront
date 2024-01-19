@@ -1,0 +1,210 @@
+/* 전역 설정 */
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #bbb;
+}
+
+body {
+    margin: 0;
+}
+
+/* main area */
+main {
+    /* width는 화면 크기, height는 auto */
+    display: flex;
+    flex-direction: column;
+}
+
+/* header area */
+header {
+    /* width는 화면 크기 */
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+}
+
+/* header area / nav-logo 구역 */
+.nav-logo-area {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* heder area / nav-log / nav 구역 */
+.nav-area button {
+    height: 35px;
+    width: 35px;
+}
+
+/* heder area / nav-log / logo 구역 */
+.logo-area a {
+    margin-left: 5px;
+    display: flex;
+}
+
+
+/* search 구역 */
+.serach-area {
+    height: 40px;
+    width: 650px;
+    display: flex;
+}
+
+.serach-area form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* search-area / search box 구역 */
+.search-box {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.serach-input {
+    border: none;
+    margin-left: 20px;
+    flex-basis: 85%;
+    height: 30px;
+}
+
+.serach-area button {
+    height: 35px;
+    width: 35px;
+}
+
+/* setting-login-area */
+.setting-login-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* setting-area */
+.setting-area button {
+    width: 35px;
+    height: 35px;
+}
+
+.login-area button {
+    height: 35px;
+    width: 35px;
+}
+
+/* 메인 사이트 영역 */
+.main-area {
+    margin-top: 70px;
+    display: flex;
+}
+
+/* 왼쪽 영상 영역 */
+.left-area {
+    margin: 0 10px;
+    width: 520px;    
+}
+
+/* 영상 영역 */
+.video-area {
+    width: 100%;
+    height: 280px;
+}
+
+.video-area > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* 영상 제목 영역 */
+.title-area {
+    margin-top: 10px;
+    display: flex;
+}
+
+.title-area > span {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* 영상 구독, 좋아요 영역 */
+.public-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 채널명, 구독 버튼 영역 */
+.public-left-area {
+    display: flex;
+    align-items: center;
+}
+
+.public-btn {
+    margin-left: 10px;
+    background-color: black;
+    height: 70%;
+    width: 45px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+
+/* 영상 좋야요, 공유 영역 */
+.public-right-area {
+    display: flex;
+    align-items: center;
+}
+
+/* 좋아요 영역 */
+.thumbs-area {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbs-area > button {
+    margin: 0 6px;
+    font-size: 10px;
+}
+
+/* 공유버튼 영역 */
+.share-area {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+
+.share-area button {
+    margin: 0 5px;
+    font-size: 10px;
+}

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 1050px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    flex-basis: 20%;
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.logo span {
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
+
+
+.data input{
+    width: 200px;
+    margin: 5px;
+}
+
+.data button {
+    margin-top: 10px;
+}

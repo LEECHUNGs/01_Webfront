@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 1050px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 50px;
+    flex-basis: 20%;
+    top: 300px;
+    width: 300px;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.logo span {
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data section {
+    margin: 10px;
+    display: flex;
+}
+
+.data span {
+    flex-basis: 25%;
+}
+
+
+.data input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+.logout-area {
+    margin-top: 40px;
+}

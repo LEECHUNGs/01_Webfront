@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 1050px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    flex-basis: 20%;
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.logo span {
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+}
+
+.nav-area {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-area > section {
+    display: flex;
+    margin: 0 20px;
+}
+
+.nav-area > section > a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    width: 80px;
+    height: 100px;
+}
+
+.nav-area > section > a > :first-child {
+    flex-basis: 80%;
+    font-size: 50px;
+}
+
+.logout-area {
+    margin-top: 40px;
+}
