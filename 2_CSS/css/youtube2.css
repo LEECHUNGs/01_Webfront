@@ -1,7 +1,7 @@
 /* 전역 설정 */
 * {
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 }
@@ -100,6 +100,7 @@ header {
 
 /* setting-login-area */
 .setting-login-area {
+    margin-right:10px;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -113,7 +114,7 @@ header {
 
 .login-area button {
     height: 35px;
-    width: 35px;
+    width: 70px;
 }
 
 /* 메인 사이트 영역 */
@@ -124,14 +125,15 @@ header {
 
 /* 왼쪽 영상 영역 */
 .left-area {
-    margin: 0 10px;
-    width: 520px;    
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 630px;    
 }
 
 /* 영상 영역 */
 .video-area {
     width: 100%;
-    height: 280px;
+    height: 355px;
 }
 
 .video-area > iframe {
@@ -149,12 +151,13 @@ header {
 .title-area > span {
     width: 100%;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 
 /* 영상 구독, 좋아요 영역 */
 .public-area {
+    height: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -169,12 +172,12 @@ header {
 .public-btn {
     margin-left: 10px;
     background-color: black;
-    height: 70%;
-    width: 45px;
+    height: 30px;
+    width: 50px;
     color: white;
     border: none;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -186,14 +189,28 @@ header {
 
 /* 좋아요 영역 */
 .thumbs-area {
+    height: 30px;
     border-radius: 15px;
     display: flex;
     align-items: center;
+    background-color: #f0f0f0;
+}
+
+.thumbs-area > * {
+    background-color: #f0f0f0;
 }
 
 .thumbs-area > button {
+    height: 30px;
     margin: 0 6px;
     font-size: 10px;
+}
+
+.thumbs-area > button:first-child {
+    width: 70px;
+}
+.thumbs-area > button:last-child {
+    width: 35px;
 }
 
 /* 공유버튼 영역 */
@@ -202,9 +219,20 @@ header {
     align-items: center;
     margin: 0 5px;
     border-radius: 15px;
+    background-color: #f0f0f0;
 }
 
 .share-area button {
+    height: 30px;
+    width: 80px;
     margin: 0 5px;
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.add-area {
+    background-color: #f0f0f0;
+}
+
+.add-area button {
+    height: 30px;
 }
