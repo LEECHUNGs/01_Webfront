@@ -106,5 +106,3 @@ function calc(op) {
 
     calcResult.innerText = result;
 }
-
-
