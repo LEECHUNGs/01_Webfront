@@ -26,6 +26,7 @@ add_btn.addEventListener("click", e => {
     const stars_btn = document.createElement("span");
     const remove_btn = document.createElement("span");
 
+    // 번호 미입력시 입력하라는 메시지 출력
     if(input.innerText == "") {
         alert("번호를 입력해 주세요!!");
         return;
