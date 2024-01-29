@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <link rel="stylesheet" href="../css/test1.css">
+</head>
+<body>
+    <main>
+        <!-- 헤더(데이터 입력 부분) -->
+        <header>
+            <!-- 데이터 입력(테이블) 지역 -->
+            <section class="table-area">
+
+                <table>
+                    <tr>
+                        <!-- 너비 높이 입력 -->
+                        <th>너비 : </th>
+                        <td><input type="number" id="width"> px</td>
+
+                        <th>높이 : </th>
+                        <td><input type="number" id="height"> px</td>
+                    </tr>
+
+                    <tr>
+                        <!-- 글자 크기, 글자 굵기 입력 -->
+                        <th>글자크기 : </th>
+                        <td><input type="number" id="font"> px</td>
+
+                        <th>굵기 : </th>
+                        <td>
+                            <label>보통<input type="radio" name="border"></label>
+                            <label>굵게<input type="radio" name="border"></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- 글자 색, 배경 색 입력 -->
+                        <th>글자색 : </th>
+                        <td><input type="text" id="fontColor"></td>
+
+                        <th>배경색 : </th>
+                        <td><input type="text" id="backgroundColor"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- 가로정렬을 어디로 할 지 입력 -->
+                        <th>가로정렬 : </th>
+                        <td colspan="3">
+                            <label>왼쪽<input type="radio" name="row"></label>
+                            <label>가운데<input type="radio" name="row"></label>
+                            <label>오른쪽<input type="radio" name="row"></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- 세로정렬을 어디로 할 지 입력 -->
+                        <th>세로정렬 : </th>
+                        <td colspan="3">
+                            <label>위<input type="radio" name="col"></label>
+                            <label>가운데<input type="radio" name="col"></label>
+                            <label>아래<input type="radio" name="col"></label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- 출력될 문자열 입력 -->
+                        <th>출력문자열 : </th>
+                        <td colspan="4"><input type="text" id="text"></td>
+                    </tr>
+                </table>
+
+                <!-- 데이터 전송 버튼 -->
+                <button class="btn">적용하기</button>
+            </section>
+        </header>
+
+        <!-- 결과 출력용 박스 지역 -->
+        <section class="container-area">
+            <div class="container"><span></span></div>
+        </section>
+
+    </main>
+
+    <script src="../js/test1.js"></script>
+   
+</body>
+</html>
