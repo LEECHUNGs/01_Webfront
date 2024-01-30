@@ -21,7 +21,7 @@ btn.addEventListener("click", () => {
 sumBtn.addEventListener("click", () => {
 
     const inputs = document.querySelectorAll(".input-number");
-
+    const result = document.querySelector("#result");
     
     let sum = 0;
     for(let i = 0; i < inputs.length; i++){
@@ -32,5 +32,5 @@ sumBtn.addEventListener("click", () => {
         sum += Number(inputs[i].value);
     }
 
-    console.log(sum);
+    result.innerText = sum;
 });
