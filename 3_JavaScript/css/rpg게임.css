@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 웹 페이지 기본 크기를 화면 크기로 맞춤 */
+button {
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: limegreen;
+    border-radius: 5px;
+    padding: 0 7px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body { 
+    background-color: #bbbbbb33; 
+    height: 90vh;
+    min-width: 500px;
+    min-height: 300px;
+}
+
+
+/* 메인 영역 기본 설정 */
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 헤더 영역 */
+header {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 제목 */
+header span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 메인(게임) 영역 */
+#main-area {
+    flex-basis: 80%;
+    height: 80%;
+    display: flex;
+}
+
+
+/* 캐릭터 영역 */
+#character-area {
+    height: 100%;
+    flex-basis: 35%;
+    padding: 2%;
+}
+
+#player-area {
+    height: 70%;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+#player-area > img {
+    height: 50%;
+}
+
+
+/* 스테이터스 영역 */
+#status-area {
+    flex-basis: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+/* 스테이터스 설정 */
+#status-area > span {
+    display: flex;
+    align-items: center;
+    height: 9%;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#status-area > span:first-child {
+    height: 19%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* 게임 진행 영역 */
+#play-area {
+    height: 100%;
+    flex-basis: 35%;
+    padding: 2%;
+}
+
+#log-area {
+    height: 70%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    overflow: auto;
+    scroll-margin-bottom: 1000px;
+}
+
+#log-area > * {
+    margin-left: 20px;
+    margin: 5px 0;
+}
+
+/* 상점 영역 */
+#store-area {
+    border-left: 1px solid #bbb;
+    flex-basis: 30%;
+    padding: 2%;
+}
+
+#store-area > span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#itemList-area {
+    height: 70%;
+    margin-top: 3%;
+}
+
+/* 아이템 목록 ul 태그 */
+#itemList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#itemList > span {
+    flex-basis: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+#itemList > li {
+    flex-basis: 28%;
+    list-style-position : inside;
+    margin-left: 5px;
+}

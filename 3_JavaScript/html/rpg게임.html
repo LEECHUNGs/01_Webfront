@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rpg 게임</title>
+    <link rel="stylesheet" href="../css/rpg게임.css">
+</head>
+<body>
+    <main>
+
+        <header>
+            <!-- title -->
+            <section>
+                <span>미니 RPG</span>
+            </section>
+        </header>
+
+        <!-- 메인(게임) 영역 -->
+        <section id="main-area">
+
+            <!-- 캐릭터 영역 -->
+            <section id="character-area">
+
+                <!-- 캐릭터 생성 버튼 -->
+                <button id="createBtn">캐릭터 생성</button>
+
+                <!-- 캐릭터 정보 영역 -->
+                <section id="player-area">
+                    <!-- 스테이터스 영역 -->
+
+                </section>
+            </section>
+
+            <!-- 게임 진행 영역 -->
+            <section id="play-area">
+
+                <!-- 전투 시작 버튼 -->
+                <button id="fightBtn">전투 시작</button>
+
+                <!-- 전투 내용 영역 -->
+                <section id="log-area">
+                    <!-- 전투 내용 작성 -->
+                    
+                </section>
+            </section>
+
+            <!-- 상점 영역 -->
+            <section id="store-area">
+                <span>상점</span>
+                <section id="itemList-area">
+                    <ul id="itemList">
+                        <span>아이템 목록</span>
+                        <li>
+                            sword(검) : <br>
+                            &ensp;&emsp;attackBouns(공격 보너스) : 5<br>
+                            &ensp;&emsp;price(가격) : 15
+                        </li>
+                        <li>
+                            shield(방패) : <br>
+                            &ensp;&emsp;defemsBpmis(방어 보너스) : 3<br>
+                            &ensp;&emsp;price(가격) : 15
+                        </li>
+                        <li>
+                            potion(물약) : <br>
+                            &ensp;&emsp;attackBouns(체력 보너스) : 20<br>
+                            &ensp;&emsp;price(가격) : 10
+                        </li>
+                    </ul>
+                    
+                </section>
+                <button id="purchaseBtn">구매</button>
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="../js/rpg게임.js"></script>
+</body>
+</html>
